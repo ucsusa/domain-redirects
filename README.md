@@ -5,7 +5,7 @@ We occasionally get requests to acquire a domain name to redirect to a specific 
 Setting up a redirection requires a few steps.
 
 1. Register your domain and update your DNS records:
--  Add an A record for the apex domain to `75.2.60.5` (the Netlify load balancer).
+-  Add an A record for the apex domain to `75.2.60.5` (which is [the Netlify load balancer](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-an-apex-domain)).
 -  Add a CNAME record for `www` to `YOUR_NETLIFY_SITE.netlify.app`.
 2. Add the domains to Netlify.
 - Add a Domain Aliases for _domain-name.tld_ and www._domain-name.tld_ in the Netlify site's Domain Settings.
