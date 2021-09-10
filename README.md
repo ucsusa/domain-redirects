@@ -15,3 +15,11 @@ Setting up a redirection requires a few steps.
 - Each domain goes on its own line, with the apex domain, tab, and the full URL of the destination.
 - You can test locally by simply running `node index` and checking `public/_redirects` to ensure you're seeing expected results. That `_redirects` file is not included in the repo, but will be built upon deployment.
 - When you commit and push the changes to your repo, Netlify will automatically rebuild and create redirects for http and https, with and without www.
+
+Todo (which we admittedly don't need right now, but might be nice to have):
+
+- Make [adding domain aliases and SSL certs a part of the build script](https://open-api.netlify.com/#operation/updateSite). So any update to `data.tsv` results in automatically adding any new domain aliases and provisioning the certificates necessary without having to log into the dashboard and add them manually.
+- If making API calls, add instructions for API key and `defaultDomain` settings in the Netlify dashboard for the site. Fallbacks can go in `netlify.toml`.
+- Expand to include link-shortening options (potentially checking `line[0]` to see if it's a domain or a path? Based upon starting with a `/` or with a flag of some kind?). 
+- If adding link-shortening capabilities, update readme with making the default domain `YOUR-SHORTLINK-SUBDOMAIN.YOUR-SITE.TLD` the primary domain and examples in `src/data.tsv` and move default fallback to `data.tsv`.
+- Change from simple single tab matching to any amount of whitespace between source and destination, allowing optional alignment in `data.tsv` for legibility.
