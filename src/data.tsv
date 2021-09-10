@@ -1,0 +1,6 @@
+# Each line is one apex domain, a single tab, a destination url with protocol and path, and a return.
+# Any line without exactly one tab in it is ignored, like these comments.
+# for example (this example has extra tabs, so won't generate a redirection):
+	#	custom-domain.com	https://www.destination.com/path/to/resource?campaign=test
+# This line, however, will generate a redirection, with exactly one tab between an apex domain and a destination url.
+example.com	https://www.example.com/example/path/

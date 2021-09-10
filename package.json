@@ -1,0 +1,19 @@
+{
+  "name": "domain-redirects",
+  "version": "1.0.0",
+  "description": "Create a Netlify site with domain redirects. Any visit gets redirected according to the domain name used to access the site. The site itself is never viewed directly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ucsusa/domain-redirects.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ucsusa/domain-redirects/issues"
+  },
+  "homepage": "https://github.com/ucsusa/domain-redirects"
+}

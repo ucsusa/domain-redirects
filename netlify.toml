@@ -1,0 +1,6 @@
+# Setting these values here overrides any settings in the Netlify dashboard.
+# This also removes the need to set any of those settings.
+
+[build]
+  publish = "public"
+  command = "node index"
